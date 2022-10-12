@@ -1,8 +1,12 @@
 import React from 'react'
 
+interface Persona {
+
+}
+
 export const ObjetosLiterales = () => {
 
-  const person = {
+  const person: Persona = {
     nombre: "Fernando",
     edad: 35,
     direccion:{
