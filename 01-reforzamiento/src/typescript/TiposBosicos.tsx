@@ -1,4 +1,5 @@
 import React from 'react'
+import { ObjetosLiterales } from './ObjetosLiterales';
 
 const TiposBosicos = () => {
   
@@ -9,10 +10,11 @@ const TiposBosicos = () => {
 
   return (
     <div>
-      <h3>Tipos Basicos</h3>
+      <h3><ObjetosLiterales/></h3>
       {nombre}, {edad}, {(estaActivo) ? 'Activo' : 'No Activo' }
       <br />
       {poderes.join(', ')}
+      <ObjetosLiterales/>
     </div>
   )
 }
