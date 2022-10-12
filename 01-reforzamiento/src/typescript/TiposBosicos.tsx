@@ -11,6 +11,8 @@ const TiposBosicos = () => {
     <div>
       <h3>Tipos Basicos</h3>
       {nombre}, {edad}, {(estaActivo) ? 'Activo' : 'No Activo' }
+      <br />
+      {poderes.join(', ')}
     </div>
   )
 }
