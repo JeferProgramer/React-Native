@@ -1,4 +1,5 @@
 import React from 'react'
+import Funciones from './Funciones';
 import { ObjetosLiterales } from './ObjetosLiterales';
 
 const TiposBosicos = () => {
@@ -10,11 +11,12 @@ const TiposBosicos = () => {
 
   return (
     <div>
-      <h3><ObjetosLiterales/></h3>
+      <h3>Tipos Basicos</h3>
       {nombre}, {edad}, {(estaActivo) ? 'Activo' : 'No Activo' }
       <br />
       {poderes.join(', ')}
       <ObjetosLiterales/>
+      <Funciones/>
     </div>
   )
 }
