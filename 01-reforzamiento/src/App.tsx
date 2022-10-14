@@ -1,6 +1,10 @@
 import React from 'react'
+import Formularios from './components/Formularios';
 // import TiposBosicos from './typescript/TiposBosicos'
-import Contador from './components/Contador';
+// import Contador from './components/Contador';
+// import ContadorConHook from './components/ContadorConHook';
+// import { Login } from './components/Login';
+import { Usuarios } from './components/Usuarios';
 
 const App = () => {
   return (
@@ -8,7 +12,11 @@ const App = () => {
       <h1>Introduccion en typescript</h1>
       <hr />
       {/* <TiposBosicos/> */}
-      <Contador/>
+      {/* <Contador/>
+      <ContadorConHook/>
+      <Login/> */}
+      {/* <Usuarios/> */}
+      <Formularios/>
     </div>
   )
 }
