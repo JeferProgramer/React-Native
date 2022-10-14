@@ -10,7 +10,7 @@ const Contador = () => {
 
   return (
     <div>
-      <h3>Contador: <small>{valor}</small></h3>
+      <h3>Contador con hook: <small>{valor}</small></h3>
       <button className='btn btn-primary' onClick={() => acumular(1)}>
         +1
       </button>
