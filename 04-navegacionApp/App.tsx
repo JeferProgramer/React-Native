@@ -4,17 +4,28 @@ import 'react-native-gesture-handler';
 // import { StackNavigator } from './src/navigator/StackNavigator';
 // import { MenuLateralBasico } from './src/navigator/ManuLateralBasico';
 import { MenuLateral } from './src/navigator/ManuLateral';
-import { Tabs } from './src/navigator/Tabs';
+import { AuthProvider } from './src/context/AuthContext';
+// import { Tabs } from './src/navigator/Tabs';
 
 const App = () => {
   return (
    <NavigationContainer>
-    {/* <MenuLateralBasico/> */}
-    {/* <StackNavigator/> */}
-    <MenuLateral/>
-    {/* <Tabs/> */}
+    <AppState>
+      {/* <MenuLateralBasico/> */}
+      {/* <StackNavigator/> */}
+      <MenuLateral/>
+      {/* <Tabs/> */}
+    </AppState>
    </NavigationContainer>
   );
 };
 
 export default App;
+
+const AppState = ({children}:any)  => {
+  return (
+    <AuthProvider>
+      {children}
+    </AuthProvider>
+  );
+};
